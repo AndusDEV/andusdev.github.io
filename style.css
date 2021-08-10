@@ -1,11 +1,42 @@
 body {
     background-color: rgb(52, 55, 56);
 }
+
+/* menu */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+/* end of menu */
+
 .title {
     background: rgb(255, 95, 109);
     background: -webkit-linear-gradient(to right, rgb(255, 95, 109), rgb(255, 195, 113));
     background: linear-gradient(to right, rgb(255, 95, 109), rgb(255, 195, 113));
     min-height: 10vh;
+}
+div.sitetitle {
+    background: rgb(95, 183, 255);
+    background: -webkit-linear-gradient(to right, rgb(95, 183, 255), rgb(0, 108, 197));
+    background: linear-gradient(to right, rgb(95, 183, 255), rgb(0, 108, 197));
+    min-height: 3vh;
 }
 div.arrow-r {
     width: 0;
@@ -16,10 +47,17 @@ div.arrow-r {
     display: inline-block;
 }
 
- h1 {
+h1 {
     color: rgb(47, 183, 218);
     font-family: 'Exo 2', sans-serif;
     font-size: 60px;
+    text-align: center;
+}
+
+h2.sitetitle {
+    color: rgb(255, 95, 109);
+    font-family: 'Exo 2', sans-serif;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -40,6 +78,18 @@ a.link {
     text-decoration: none;
 }
 a.link:hover {
+    color: rgb(243, 86, 38);
+	background: -webkit-linear-gradient(92deg, rgb(243, 86, 38), rgb(254, 171, 58));
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: animtext 4s infinite linear;
+}
+a.linkmb {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: rgb(7, 252, 170);
+    text-decoration: none;
+}
+a.linkmb:hover {
     color: rgb(243, 86, 38);
 	background: -webkit-linear-gradient(92deg, rgb(243, 86, 38), rgb(254, 171, 58));
     -webkit-background-clip: text;
@@ -89,6 +139,11 @@ footer {
 p.footer-text {
     font-size: 20px;
     font-family: 'Indie Flower', cursive;
+}
+
+div.proj-page {
+    padding: 3px;
+    background-color: rgb(66, 70, 71);
 }
 
 /* Shapes */
