@@ -24,6 +24,16 @@ li a {
 li a:hover {
     background-color: rgb(52, 55, 56);
 }
+a.active {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background: rgb(61, 212, 250);
+    background: -webkit-linear-gradient(to right, rgb(95, 183, 255), rgb(0, 108, 197));
+    background: linear-gradient(to right, rgb(95, 183, 255), rgb(0, 108, 197));
+}
 /* end of menu */
 
 .title {
@@ -81,8 +91,10 @@ a.link:hover {
     color: rgb(243, 86, 38);
 	background: -webkit-linear-gradient(92deg, rgb(243, 86, 38), rgb(254, 171, 58));
     -webkit-background-clip: text;
+    background-clip: text;
 	-webkit-text-fill-color: transparent;
 	-webkit-animation: animtext 4s infinite linear;
+    animation: animtext 4s infinite linear;
 }
 a.linkmb {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
@@ -93,8 +105,10 @@ a.linkmb:hover {
     color: rgb(243, 86, 38);
 	background: -webkit-linear-gradient(92deg, rgb(243, 86, 38), rgb(254, 171, 58));
     -webkit-background-clip: text;
+    background-clip: text;
 	-webkit-text-fill-color: transparent;
 	-webkit-animation: animtext 4s infinite linear;
+    animation: animtext 4s infinite linear;
 }
 
 .hi {
