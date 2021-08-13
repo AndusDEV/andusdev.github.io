@@ -45,6 +45,38 @@
                 <br><a class="link" href="https://github.com/AndusDEV/MC-VersionsHistory">MC Versions History</a>
             </h2>
         </div>
+        <br>
+        <div id="clone">
+            <h2 class="small-title">Clone one of projects:</h2>
+            <h2 class="small-desc">If you want to change something in project's code or just compile it your self run this in termial:</h2>
+            <div class="terminal">
+                <h2 class="terminal"><font color="lightgreen">root@andus</font>:<font color="aqua">~</font>$ git clone &lt;url&gt;</h2>
+            </div>
+
+            <h2 class="small-desc">(Replace &lt;url&gt; with project url)</h2>
+            <h2 class="small-desc">You should get output like this:</h2>
+
+            <div class="terminal">
+                <h2 class="terminal"><font color="lightgreen">root@andus</font>:<font color="aqua">~</font>$ git clone https://github.com/andusdev/minibox</h2>
+                <h2 class="terminal">Cloning into 'folder'...
+                    <br>remote: Enumerating objects: 6, done.
+                    <br>remote: Counting objects: 100% (6/6), done.
+                    <br>remote: Compressing objects: 100% (4/4), done.
+                    <br>remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+                    <br>Unpacking objects: 100% (6/6), done.
+                    <br>
+                    <br><font color="lightgreen">root@andus</font>:<font color="aqua">~</font>$ <span id="cursor" class="">█</span>
+                </h2>
+            </div>
+        </div>
+
+        <script>
+            const cursor = document.querySelector("#cursor");
+
+            setInterval(function() {
+                cursor.classList.toggle("hide");
+            }, 500);
+        </script>
     </body>
     <br>
     <footer>

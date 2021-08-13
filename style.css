@@ -57,6 +57,18 @@ div.arrow-r {
     display: inline-block;
 }
 
+div.terminal {
+    background: rgb(0,0,0);
+}
+
+span.hide { opacity: 0; }
+
+h2.terminal {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
+}
+
 h1 {
     color: rgb(47, 183, 218);
     font-family: 'Exo 2', sans-serif;
