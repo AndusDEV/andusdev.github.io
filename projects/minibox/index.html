@@ -2,6 +2,7 @@
     <head>
         <title>AndusDEV - MiniBox</title>
         <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/projects/projects.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +27,9 @@
         <div class="sitetitle">
             <h2 class="sitetitle">MiniBox</h2>
         </div>
-        <a href="https://github.com/andusdev/minibox"><button class="btnsoc"><img src="/images/socials/GH-Mark-Light.png"></button></a>
+        <a href="https://github.com/andusdev/minibox"><button class="btnsoc"><img src="/images/socials/GH-Mark-Light.png"> Github</button></a>
+        <a class="nolatest" href="#"><button class="btndwn"><img src="/projects/images/download_proj.png"> Download Latest</button>
+            <span class="popuptext" id="popup">unfortunately, this project does not have any releases</span></a>
         <div id="main">
             <h2 class="small-desc">Your Everything. Smaller. In one app.</h2>
         </div>
@@ -48,6 +51,16 @@
             <img id="ss4" src="./images/ss4.png" width="310" height="260" alt="E-Mail Page">
             <img id="ss5" src="./images/ss5.png" width="310" height="260" alt="E-Mail Page">
         </div>
+        <br>
+        
+        <a href="https://github.com/andusdev/minibox/releases"><button class="btndwn_all"><img src="/projects/images/download_proj.png"> See All Releases</button></a>
+
+        <script>
+            function openPopup() {
+                var popup = document.getElementById("popup");
+                popup.classList.toggle("show");
+            }
+        </script>
     </body>
 
     <footer>

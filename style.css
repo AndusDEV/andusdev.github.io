@@ -36,37 +36,19 @@ a.active {
 }
 /* end of menu */
 
+/* title of website */
 .title {
     background: rgb(255, 95, 109);
     background: -webkit-linear-gradient(to right, rgb(255, 95, 109), rgb(255, 195, 113));
     background: linear-gradient(to right, rgb(255, 95, 109), rgb(255, 195, 113));
     min-height: 10vh;
 }
+/* title of page */
 div.sitetitle {
     background: rgb(95, 183, 255);
     background: -webkit-linear-gradient(to right, rgb(95, 183, 255), rgb(0, 108, 197));
     background: linear-gradient(to right, rgb(95, 183, 255), rgb(0, 108, 197));
     min-height: 3vh;
-}
-div.arrow-r {
-    width: 0;
-    height: 0;
-    border-top: 25px solid transparent;
-    border-left: 50px solid rgb(0, 255, 242);
-    border-bottom: 25px solid transparent;
-    display: inline-block;
-}
-
-div.terminal {
-    background: rgb(0,0,0);
-}
-
-span.hide { opacity: 0; }
-
-h2.terminal {
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-    font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
 }
 
 h1 {
@@ -100,20 +82,6 @@ a.link {
     text-decoration: none;
 }
 a.link:hover {
-    color: rgb(243, 86, 38);
-	background: -webkit-linear-gradient(92deg, rgb(243, 86, 38), rgb(254, 171, 58));
-    -webkit-background-clip: text;
-    background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-webkit-animation: animtext 4s infinite linear;
-    animation: animtext 4s infinite linear;
-}
-a.linkmb {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    color: rgb(7, 252, 170);
-    text-decoration: none;
-}
-a.linkmb:hover {
     color: rgb(243, 86, 38);
 	background: -webkit-linear-gradient(92deg, rgb(243, 86, 38), rgb(254, 171, 58));
     -webkit-background-clip: text;
@@ -167,12 +135,17 @@ p.footer-text {
     font-family: 'Indie Flower', cursive;
 }
 
-div.proj-page {
-    padding: 3px;
-    background-color: rgb(66, 70, 71);
-}
-
 /* Shapes */
+
+/* arrows */
+div.arrow-r {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 50px solid rgb(0, 255, 242);
+    border-bottom: 25px solid transparent;
+    display: inline-block;
+}
 div.arrow-l {
     width: 0;
     height: 0;
@@ -182,6 +155,7 @@ div.arrow-l {
     display: inline-block;
 }
 
+/* heart */
 i.heart {
     position: relative;
     width: 25px;
