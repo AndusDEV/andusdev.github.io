@@ -1,0 +1,20 @@
+variables:
+	{kill counter.%player%.kills_session} = 0
+	{kill counter.%player%.kills_session_max} = 0
+	{kill counter.%player%.kills_total} = 0
+
+on death:
+	attacker is a player
+	add 1 to {kill counter.%attacker%.kills_total}
+	add 1 to {kill counter.%attacker%.kills_session}
+	{kill counter.%attacker%.kills_session} is greater than {kill counter.%attacker%.kills_session_max}:
+		set {kill counter.%attacker%.kills_session_max} to {kill counter.%attacker%.kills_session}
+
+on death of player:
+	set {kill counter.%player%.kills_session} to 0
+
+command /kills:
+	executable by: players
+	trigger:
+		message "Zabiłeś %{kill counter.%player%.kills_session}% mobów i graczy w tym życiu z %{kill counter.%player%.kills_total}% zabójstw razem."
+		message "Twoja maksymalna seria zabójstw to %{kill counter.%player%.kills_session_max}% zabójstw w jednym życiu."

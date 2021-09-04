@@ -1,0 +1,49 @@
+command /ban [<player>]:
+    permission: andus.ban.ban
+    permission message: &4You don't have permission: &candus.ban.ban
+    trigger:
+        if arg 1 is set:
+            make console execute command "ban %arg-1%"
+            broadcast "&cPlayer: &b%arg-1% &cwas banned"
+        else:
+            send "&cEnter the &4player name" to player
+
+command /tempban [<player>] [<integer>] [<text>]:
+    permission: andus.ban.tempban
+    permission message: &4You don't have permission: &candus.ban.unban
+    trigger:
+        if arg 1 is set:
+            if arg 2 is set:
+                if arg 3 is set:
+                    if arg 3 is "s":
+                        make console execute command "ban %arg-1%"
+                        broadcast "&cPlayer: &b%arg-1% &cwas banned for &a%arg-2% &cseconds"
+                        set {_time} to "%arg-2% seconds" parsed as timespan
+                        wait {_time}
+                        make console execute command "unban %arg-1%"
+                    else if arg 3 is "m":
+                        make console execute command "ban %arg-1%"
+                        broadcast "&cPlayer: &b%arg-1% &cwas banned for &a%arg-2% &cminutes"
+                        set {_time} to "%arg-2% minutes" parsed as timespan
+                        wait {_time}
+                        make console execute command "unban %arg-1%"
+                    else if arg 3 is "h":
+                        make console execute command "ban %arg-1%"
+                        broadcast "&cPlayer: &b%arg-1% &cwas banned for &a%arg-2% &chours"
+                        set {_time} to "%arg-2% hours" parsed as timespan
+                        wait {_time}
+                        make console execute command "unban %arg-1%"
+                else:
+                    send "&cEnter a time unit: &4s, m, h" to player
+            else:
+                send "&cEnter the number of &4seconds/minutes/hours" to player
+        else:
+            send "&cEnter the &4player name" to player
+
+command /unban [<offlineplayer>]:
+    permission: andus.ban.unban
+    permission message: &4You don't have permission: &candus.ban.unban
+    trigger:
+        if arg 1 is set:
+            make console execute command "pardon %arg-1%"
+            broadcast "&aPlayer: &b%arg-1% &awas unbanned"
