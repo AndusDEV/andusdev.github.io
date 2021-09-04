@@ -181,3 +181,222 @@ i.heart::after {
     transform: rotate(45deg);
     transform-origin: 100% 100%;
 }
+body {
+    background-color: rgb(52, 55, 56);
+}
+
+/* menu */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(66, 70, 71);
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: rgb(52, 55, 56);
+}
+a.active {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background: rgb(61, 212, 250);
+    background: -webkit-linear-gradient(to right, rgb(95, 183, 255), rgb(0, 108, 197));
+    background: linear-gradient(to right, rgb(95, 183, 255), rgb(0, 108, 197));
+}
+
+/* end of menu */
+
+/* title of website */
+.title {
+    background: rgb(255, 95, 109);
+    background: -webkit-linear-gradient(to right, rgb(255, 95, 109), rgb(255, 195, 113));
+    background: linear-gradient(to right, rgb(255, 95, 109), rgb(255, 195, 113));
+    min-height: 10vh;
+}
+/* title of page */
+div.sitetitle {
+    background: rgb(95, 183, 255);
+    background: -webkit-linear-gradient(to right, rgb(95, 183, 255), rgb(0, 108, 197));
+    background: linear-gradient(to right, rgb(95, 183, 255), rgb(0, 108, 197));
+    min-height: 3vh;
+}
+
+h1 {
+    color: rgb(47, 183, 218);
+    font-family: 'Exo 2', sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+h2.sitetitle {
+    color: rgb(255, 95, 109);
+    font-family: 'Exo 2', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2.small-title {
+    color: rgb(47, 183, 218);
+    font-size: 30px;
+    text-align: left;
+}
+
+h2.small-desc {
+    color: rgb(127, 225, 250);
+    font-size: 20px;
+    text-align: left;
+}
+
+a.link {
+    color: rgb(7, 252, 170);
+    text-decoration: none;
+}
+a.link:hover {
+    color: rgb(243, 86, 38);
+	background: -webkit-linear-gradient(92deg, rgb(243, 86, 38), rgb(254, 171, 58));
+    -webkit-background-clip: text;
+    background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: animtext 4s infinite linear;
+    animation: animtext 4s infinite linear;
+}
+
+.hi {
+    color: rgb(47, 183, 218);
+    font-size: 50px;
+    text-align: left;
+}
+.hi2 {
+    color: rgb(127, 225, 250);
+    font-size: 25px;
+    text-align: left;
+}
+
+.socials {
+    text-align: center;
+}
+.btnsoc {
+    border-radius: 30%;
+    border: none;
+    background-color: rgb(0, 139, 139);
+    padding: 10px;
+}
+.btnsoc:hover {
+    background-color: rgb(0, 175, 175);
+}
+
+@keyframes animtext {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+      -webkit-filter: hue-rotate(-360deg);
+    }
+  }
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(66, 70, 71);
+    color: rgb(255, 255, 255);
+}
+p.footer-text {
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+}
+
+/* Shapes */
+
+/* arrows */
+div.arrow-r {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 50px solid rgb(0, 255, 242);
+    border-bottom: 25px solid transparent;
+    display: inline-block;
+}
+div.arrow-l {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 50px solid rgb(0, 255, 242);
+    border-bottom: 25px solid transparent;
+    display: inline-block;
+}
+
+/* heart */
+i.heart {
+    position: relative;
+    width: 25px;
+    height: 22.5px;
+    display: inline-block;
+
+}
+i.heart::before,
+i.heart::after {
+    position: absolute;
+    content: "";
+    left: 12.5px;
+    top: 0;
+    width: 12.5px;
+    height: 20px;
+    background: red;
+    border-radius: 12.5px 12.5px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+i.heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+/* Media */
+@media (max-width: 700px) {
+    ul {
+        height: 70px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(66, 70, 71);
+    }
+    li {
+        float: left;
+    }
+    li a {
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color: rgb(52, 55, 56);
+    }
+    a.active {
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        background: rgb(61, 212, 250);
+        background: -webkit-linear-gradient(to right, rgb(95, 183, 255), rgb(0, 108, 197));
+        background: linear-gradient(to right, rgb(95, 183, 255), rgb(0, 108, 197));
+    }
+}
