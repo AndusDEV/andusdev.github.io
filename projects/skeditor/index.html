@@ -1,42 +1,28 @@
 <html>
     <head>
-        <title>AndusDEV - SkriptEditor (Page In Works)</title>
-        <link rel="stylesheet" href="style.css">
+        <title>AndusDEV - SkriptEditor</title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/projects/projects.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 
         <meta name="keywords" content="AndusDEV, Andus, Java">
-        <meta name="description" content="SkriptEditor Project Page">
+        <meta name="description" content="SkinViewer Project Page">
         <meta name="author" content="Andus">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <p id="terminal-animation" class="lead">root@andus:~$ </p>
-        <a href="https://github.com/andusdev/skeditor">GitHub Repository</a>
-        <br>
-        <a href="#">Unfinished Page not avaliable for now</a>
-
-        <script>
-            element = document.querySelector('#terminal-animation')
-            finalText = 'Hi. This Website is not ready now (I\'ll do it.... Someday ;)). If you want, you can check out Project\'s Github Repository or not finished version of page.'
-
-            window.onload = terminalType(0, element, finalText)
-
-            function terminalType(count, element, finalText) {
-                if (count < finalText.length) {
-                    if (count < 44) {
-                        element.innerHTML += finalText.charAt(count);
-                        count++;
-                        setTimeout(terminalType, 60, count, element, finalText);
-                    } else if (count >= 44 && count < 49) {
-                        element.innerHTML += finalText.charAt(count);
-                        count++;
-                        setTimeout(terminalType, 300, count, element, finalText);
-                    } else if (count >= 49) {
-                        element.innerHTML += finalText.charAt(count);
-                        count++;
-                        setTimeout(terminalType, 70, count, element, finalText);
-                    }
-                }
-            }
-        </script>
+        
     </body>
+    <footer>
+        <p class="footer-text">Made with <i class="heart"></i> By: Andus</p>
+        <p class="footer-text"><a class="link" href="https://github.com/andusdev">Github</a> | 
+            <a class="link" href="https://twitter.com/MrAnduss">Twitter</a> | 
+            <a class="link" href="https://t.me/apdates">Telegram</a>
+        </p>
+    </footer>
 </html>
