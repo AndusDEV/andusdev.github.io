@@ -1,0 +1,43 @@
+div.back {
+    background: url("./images/back.png") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 160px;
+    height: 95px;
+}
+
+/* MrAnduss on chair code */
+div.mranduss {
+    background: url("./images/AndusBack.png") no-repeat;
+    background-size: 85%;
+    position: absolute;
+    top: 380px;
+    right: 750px;
+    width: 110px;
+    height: 170px;
+}
+div.mranduss:hover {
+    background: url("./images/AndusFront.png") no-repeat;
+    background-size: 100%;
+}
+
+/* Spotify Laptop code */
+div.spotify {
+    background: url("./images/SpotifyLaptop.png") no-repeat;
+    background-size: 50%;
+    position: absolute;
+    transform: skewY(5deg);
+    top: 390px;
+    right: 610px;
+    width: 130px;
+    height: 60px;
+}
+div.spotify:hover {
+    background: url("./images/SpotifyHover.png") no-repeat;
+    background-size: 50%;
+    position: absolute;
+    top: 390px;
+    right: 610px;
+}
