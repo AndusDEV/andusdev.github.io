@@ -6,6 +6,15 @@ body {
     background-color: rgb(52, 55, 56);
 }
 
+::-webkit-scrollbar-thumb {
+    background: rgb(95, 183, 255);
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(0, 140, 255);
+}
+
 .center {
     margin: auto;
     width: 50%;
