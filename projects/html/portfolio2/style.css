@@ -1,0 +1,80 @@
+body {
+    background-color: rgb(39, 48, 73);
+
+    animation: fadeInAnim ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+.column {
+    float: left;
+}
+  
+.left {
+    width: 50%;
+}
+  
+.right {
+    width: 50%;
+}
+
+.center {
+    text-align: center;
+}
+
+.textblack {
+    color:rgb(0, 0, 0);
+}
+
+.profilepic {
+    margin-top: 5%;
+    border-radius: 50%;
+}
+
+.maincolor {
+    color: rgb(0, 168, 107);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2.social {
+    font-size: 30px;
+}
+
+h2.project {
+    font-size: 25px;
+}
+
+h1, h2, h3, h4, a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    color: rgb(206, 206, 206);
+}
+
+a.social:hover {
+    color: rgb(0, 124, 78);
+}
+
+@keyframes fadeInAnim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideinAnim {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: 100%;
+    }
+}
