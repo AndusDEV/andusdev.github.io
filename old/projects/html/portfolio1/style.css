@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(226, 226, 226);
+
+    animation: fadeInAnim ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.portfolio {
+    display: flex;
+}
+  
+.column {
+    float: left;
+}
+  
+.left {
+    width: 50%;
+}
+  
+.right {
+    width: 50%;
+}
+
+.textblack {
+    color:rgb(0, 0, 0);
+}
+
+.profilepic {
+    margin-top: 5%;
+    border-radius: 50%;
+}
+
+.firstbtn {
+    margin-left: 7%;
+}
+
+.btn {
+    margin-top: 5%;
+    border-radius: 10%;
+    border: 5px solid rgb(51, 51, 51);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 8px 14px;
+    transition: 1s;
+}
+
+.btn:hover {
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgb(51, 51, 51);
+}
+
+
+@keyframes fadeInAnim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideinAnim {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: 100%;
+    }
+}

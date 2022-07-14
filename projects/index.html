@@ -1,14 +1,10 @@
 <html>
     <head>
         <title>AndusDEV - Projects</title>
-        <link rel="stylesheet" href="/style.css">
-        <link rel="stylesheet" href="/projects/projects.css">
+        <link rel="stylesheet" href="../style.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 
         <meta name="keywords" content="AndusDEV, Andus, Java">
         <meta name="description" content="Projects page of Andus's Website">
@@ -17,91 +13,56 @@
     </head>
 
     <body>
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a class="active">Projects</a></li>
-            <li><a href="/about.html">About Me</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Other</a>
-                <div class="dropdown-content">
-                  <a href="https://blog.andus.dev">Blog</a>
-                  <a href="https://docs.andus.dev">Docs</a>
-                  <a href="/contact.html">Contact</a>
-                </div>
-            </li>
-        </ul>
-        <div class="title">
-            <h1>AndusDEV</h1>
-        </div>
-        <div class="sitetitle">
-            <h2 class="sitetitle">Projects</h2>
-        </div>
-        <br>
-        <div id="projects" class="proj-page">
-            <h2 class="small-desc">These are all my projects:
-                <br><a class="link" href="https://github.com/AndusDEV/2D-Terrain-Gen">2D Terrain Generation (Unity Script) <img src="/images/socials/GH-Mark-Light.png"></a><br>
-                <br><a class="link" href="/projects/skeditor/index.html">Skript Editor (Code editor for SkriptLang) <img src="/projects/images/globe.png" width="32" height="32"></a><br>
-                <br><a class="link" href="https://github.com/AndusDEV/andusdev.github.io">andusdev.github.io (AndusDEV's website source) <img src="/images/socials/GH-Mark-Light.png"></a><br>
-                <br><a class="link" href="https://github.com/AndusDEV/WoodCutter-16">WoodCutter 16 (fork of WoodCutter) <img src="/images/socials/GH-Mark-Light.png"></a><br>
-                <br><a class="link" href="https://github.com/AndusDEV/adev-core-API">AndusDEV's core API <img src="/images/socials/GH-Mark-Light.png"></a><br>
-                <br><a class="linkmb" href="/projects/minibox/index.html">MiniBox <img src="/projects/images/globe.png" width="32" height="32"></a><br>
-                <br><a class="link" href="/projects/skinviewer/index.html">MC SkinViewer <img src="/projects/images/globe.png" width="32" height="32"></a><br>
-                <br><a class="link" href="https://github.com/AndusDEV/SimpleClicker">Simple Clicker <img src="/images/socials/GH-Mark-Light.png"></a><br>
-                <br><a class="link" href="https://github.com/AndusDEV/SimpleTextEditor">Simple Text Editor <img src="/images/socials/GH-Mark-Light.png"></a><br>
-                <br><a class="link" href="https://github.com/AndusDEV/MojangStatus-Rewrite">Mojang Status Rewrite <img src="/images/socials/GH-Mark-Light.png"></a><br>
-                <br><a class="link" href="https://github.com/AndusDEV/MojangStatus">Original Mojang Status <img src="/images/socials/GH-Mark-Light.png"></a><br>
-                <br><a class="link" href="https://github.com/AndusDEV/Freddys-Nose">Freddy's Nose <img src="/images/socials/GH-Mark-Light.png"></a><br>
-                <br><a class="link" href="https://github.com/AndusDEV/YT-Music-TV">YT Music for TV <img src="/images/socials/GH-Mark-Light.png"></a><br>
-                <br><a class="link" href="https://github.com/AndusDEV/MC-VersionsHistory">MC Versions History <img src="/images/socials/GH-Mark-Light.png"></a>
-                <br><i>(<img src="/images/socials/GH-Mark-Light.png"> icon means link directs straight to Github repository, <img src="/projects/images/globe.png" width="32" height="32"> icon means link directs to project page)</i>
-            </h2>
-        </div>
-        <div id="oprojects" class="proj-page">
-            <h2 class="small-desc">My other non-Java projects:
-                <br><a class="link" href="https://fhost.andus.dev/user/andus/skriptscripts/">Minecraft Skript Scripts</a><br>
-                <br><a class="link" href="html/index.html">HTML Website Templates</a><br>
-                <br><a class="link" href="../posts/25_things_mc_java/index.html">Rick Roll a friend</a>
-            </h2>
-        </div>
-        <br>
-        <div id="clone">
-            <h2 class="small-title">Clone one of projects:</h2>
-            <h2 class="small-desc">If you want to change something in project's code or just compile it your self run this in termial:</h2>
-            <div class="terminal">
-                <h2 class="terminal"><font color="lightgreen">root@andus</font>:<font color="aqua">~</font>$ git clone &lt;url&gt;</h2>
-            </div>
-
-            <h2 class="small-desc">(Replace &lt;url&gt; with project url)</h2>
-            <h2 class="small-desc">You should get output like this:</h2>
-
-            <div class="terminal">
-                <h2 class="terminal"><font color="lightgreen">root@andus</font>:<font color="aqua">~</font>$ git clone https://github.com/andusdev/minibox</h2>
-                <h2 class="terminal">Cloning into 'folder'...
-                    <br>remote: Enumerating objects: 6, done.
-                    <br>remote: Counting objects: 100% (6/6), done.
-                    <br>remote: Compressing objects: 100% (4/4), done.
-                    <br>remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
-                    <br>Unpacking objects: 100% (6/6), done.
-                    <br>
-                    <br><font color="lightgreen">root@andus</font>:<font color="aqua">~</font>$ <span id="cursor" class="">█</span>
-                </h2>
-            </div>
-        </div>
-
+        <!-- Every Page Start -->
         <script>
-            const cursor = document.querySelector("#cursor");
-
-            setInterval(function() {
-                cursor.classList.toggle("hide");
-            }, 500);
+            function ugoodfunc() {
+                alert("U Good?");
+            }
         </script>
+
+        <a href="/">
+            <pre>
+    _              _           
+   / \   _ __   __| |_   _ ___ 
+  / _ \ | '_ \ / _` | | | / __|
+ / ___ \| | | | (_| | |_| \__ \
+/_/   \_\_| |_|\__,_|\__,_|___/
+            </pre>
+        </a>
+        <a onclick="ugoodfunc()" href="#">Light Mode ☀️</a>
+        <div class="links" id="nav">
+            <h3 class="smalltitle">{Nav}</h3>
+            [ <a class="activepage">Projects</a> | 
+            <a href="../about.html">About Me</a> | 
+            <a href="https://blog.andus.dev/">Blog</a> | 
+            <a href="https://docs.andus.dev">Docs</a> | 
+            <a href="../contact.html">Contact</a> ]
+        </div>
+        <!-- End of start -->
+        <div class="links" id="projects">
+            <h3 class="smalltitle">{Projects}</h3>
+            <h4>These are most of my projects:</br>
+                (You can find rest of them on <a href="https://github.com/AndusDEV/">my Github</a>)</h4>
+            <a href="https://github.com/AndusDEV/2D-Terrain-Gen">2D Terrain Generation (Unity Script)</a></br>
+            <a href="/old/projects/skeditor/index.html">Skript Editor (Code editor for SkriptLang)</a></br>
+            <a href="https://github.com/AndusDEV/andusdev.github.io">andusdev.github.io (AndusDEV's website source)</a></br>
+            <a href="https://github.com/AndusDEV/WoodCutter-16">WoodCutter 16 (fork of WoodCutter)</a></br>
+            <a href="https://github.com/AndusDEV/adev-core-API">AndusDEV's core API</a></br>
+            <a href="/old/projects/minibox/index.html">MiniBox</a></br>
+            <a href="/old/projects/skinviewer/index.html">MC SkinViewer</a></br>
+            <a href="https://github.com/AndusDEV/SimpleClicker">Simple Clicker</a></br>
+            <a href="https://github.com/AndusDEV/SimpleTextEditor">Simple Text Editor</a></br>
+            <a href="https://github.com/AndusDEV/MojangStatus-Rewrite">Mojang Status Rewrite</a></br>
+            <a href="https://github.com/AndusDEV/MojangStatus">Original Mojang Status</a></br>
+            <a href="https://github.com/AndusDEV/Freddys-Nose">Freddy's Nose</a></br>
+            <a href="https://github.com/AndusDEV/YT-Music-TV">YT Music for TV</a></br>
+            <a href="https://github.com/AndusDEV/MC-VersionsHistory">MC Versions History</a>
+        </div>
+        <div class="links" id="other">
+            <h3 class="smalltitle">{Other Projects}</h3>
+            <a href="./mcsk/">Minecraft Skript Scripts</a></br>
+            <a href="html/index.html">HTML Website Templates</a></br>
+            <a href="/posts/25_things_mc_java/index.html">Rick Roll a friend</a>
+        </div>
     </body>
-    <br>
-    <footer>
-        <p class="footer-text">Made with <i class="heart"></i> By: Andus</p>
-        <p class="footer-text"><a class="link" href="https://github.com/andusdev">Github</a> | 
-            <a class="link" href="https://twitter.com/MrAnduss">Twitter</a> | 
-            <a class="link" href="https://t.me/apdates">Telegram</a>
-        </p>
-    </footer>
 </html>

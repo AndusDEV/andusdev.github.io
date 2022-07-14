@@ -1,0 +1,18 @@
+command /sethome:
+	permission: andus.homes.sethome
+	description: Ustaw swój dom
+	executable by: players
+	trigger:
+		set {home::%uuid of player%} to location of player
+		send "&aDom ustawiony na &7%location of player%!" to player
+
+command /home:
+	permission: andus.homes.home
+	description: Teleport to home
+	executable by: players
+	trigger:
+		if {home::%uuid of player%} is not set:
+			send "&cJeszcze nie ustawi³eœ swojego domu!"
+			stop trigger
+		teleport player to {home::%uuid of player%}
+		send "&aZosta³eœ przeteleportowany do swojego domu." to player
