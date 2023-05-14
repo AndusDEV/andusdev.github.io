@@ -9,6 +9,10 @@ h1 {
     color: #003363;
     text-align: center;
 }
+h2 {
+    color: #004c94;
+    text-align: center;
+}
 
 #query {
     padding: 10px;
