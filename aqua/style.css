@@ -40,3 +40,9 @@ button {
 button:hover {
     background-color: #3367d6;
 }
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
