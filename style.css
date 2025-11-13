@@ -1,6 +1,7 @@
 body {
     background-color: rgb(27, 27, 27);
     color: white;
+    text-align: center;
 }
 
 a {
@@ -31,4 +32,87 @@ h1, h2, h3, h4, a {
 
 h3 {
     color: rgb(208, 208, 208);
+}
+
+/* ===================== ST5 ===================== */
+a pre {
+    display: inline-block;
+    margin: 2rem 0;
+    white-space: pre;
+    position: relative;
+    transition: color 1.8s ease, text-shadow 0.8s ease;
+}
+
+a pre::before {
+    content: '';
+    display: block;
+    width: 50ch;
+    height: 2px;
+    margin: 0 auto 10px;
+    background: #e50914;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 1s ease, opacity 0.6s ease;
+    box-shadow: 0 0 6px #e50914, 0 0 12px #ff3333;
+    animation: flicker 2s infinite alternate; 
+}
+
+a pre span.bottom-left,
+a pre span.bottom-right {
+    display: inline-block;
+    height: 2px;
+    width: 10ch;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: transform 1.2s ease, opacity 0.6s ease;
+    background: #e50914;
+    box-shadow: 0 0 4px #e50914, 0 0 8px #ff3333;
+    animation: flicker 2.5s infinite alternate; 
+}
+
+a pre span.bottom-left { transform-origin: right; }
+a pre span.bottom-right { transform-origin: left; }
+
+a:hover pre::before { transform: scaleX(1); opacity: 1; }
+a:hover pre span.bottom-left { transform: scaleX(1); opacity: 1; }
+a:hover pre span.bottom-right { transform: scaleX(1); opacity: 1; transition-delay: 0.15s; }
+
+a:hover pre {
+    color: #ff4d4d;
+    text-shadow: 
+        0 0 4px #ff4d4d, 
+        0 0 8px #e50914, 
+        0 0 12px #ff1a1a;
+    animation: glitch 1.5s infinite linear; 
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); }
+    1% { color: black; }
+    2% { color: #ff4d4d; }
+    5% { transform: translate(0.5px, -0.5px); }
+    10% { transform: translate(-0.5px, 0.5px); }
+    15% { transform: translate(0.5px, 0.5px); }
+    20% { transform: translate(0); }
+    100% { transform: translate(0); } 
+}
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        opacity: 1;
+        box-shadow: 0 0 6px #e50914, 0 0 12px #ff3333;
+    }
+    20%, 55% {
+        opacity: 0.5;
+        box-shadow: 0 0 2px #e50914, 0 0 6px #ff3333;
+    }
+    48% {
+        opacity: 0.9;
+        box-shadow: 0 0 4px #e50914, 0 0 10px #ff3333;
+    }
+    21% {
+        opacity: 0.3;
+        box-shadow: none; 
+    }
 }
