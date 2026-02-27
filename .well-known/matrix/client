@@ -2,9 +2,14 @@
   "m.homeserver": {
     "base_url": "https://chat.andus.dev"
   },
-  "io.element.voip": {
-    "livekit_url": "wss://rtc.andus.dev",
-    "livekit_service_url": "https://rtc.andus.dev",
-    "livekit_ws_url": "wss://rtc.andus.dev"
-  }
+  "org.matrix.msc2965.authentication": {
+    "issuer": "https://chatauth.andus.dev/",
+    "account": "https://chatauth.andus.dev/account"
+  },
+  "org.matrix.msc4143.rtc_foci": [
+    {
+      "type": "livekit",
+      "livekit_service_url": "https://rtc.andus.dev"
+    }
+  ]
 }
