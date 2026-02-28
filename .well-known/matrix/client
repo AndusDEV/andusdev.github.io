@@ -5,5 +5,11 @@
   "org.matrix.msc2965.authentication": {
     "issuer": "https://chatauth.andus.dev/",
     "account": "https://chatauth.andus.dev/account"
-  }
+  },
+  "org.matrix.msc4143.rtc_foci": [
+    {
+      "type": "livekit",
+      "livekit_service_url": "https://matrixrtc-jwt.andus.dev"
+    }
+  ]
 }
